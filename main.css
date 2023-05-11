@@ -64,6 +64,14 @@ body {
 		align-items: center;
 		max-width: 185px;
 		margin: 40px auto 0px;
+		.btn {
+			cursor: pointer;
+		}
+	}
+
+	.cover_img {
+		width: 200px;
+		height: 130px;
 	}
 }
 
