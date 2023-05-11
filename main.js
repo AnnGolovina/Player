@@ -50,4 +50,9 @@ function loadSong(song) {
   cover.src = `img/img-${currentTrackIndex + 1}.jpg`;
 }
 
-//console.log(audio, "ELEMNT");
+audio.ontimeupdate = (e) => {
+  const { duration, currentTime } = e.srcElement;
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
+  console.log(duration, "dur", currentTime, "cur");
+};

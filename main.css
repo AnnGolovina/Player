@@ -3,9 +3,10 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Acme', sans-serif;
-	font-family: 'Catamaran', sans-serif;
-	font-family: 'Heebo', sans-serif;
-}
+font-family: 'Catamaran', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Heebo', sans-serif;
+	}
 
 #wrapper {
 	height: 100vh;
@@ -29,11 +30,14 @@ body {
 		line-height: 14px;
 		color: #1c1c7f;
 	}
+	.title{
+		
+	}
+
 	.cover {
 		display: flex;
 		justify-content: center;
 		margin: 25px 0;
-
 	}
 	.song {
 		font-weight: 700;
@@ -54,7 +58,6 @@ body {
 			background: #1c1c7f;
 			border-radius: 5px;
 			height: 5px;
-			width: 150px;
 			margin: 2px;
 		}
 	}
