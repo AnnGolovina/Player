@@ -46,7 +46,7 @@ nextButton.onclick = () => {
 };
 
 function loadSong(song) {
-  songName.innerHTML = song;
+  songName.innerHTML = songs[currentTrackIndex].split(".")[0];
   cover.src = `img/img-${currentTrackIndex + 1}.jpg`;
 }
 
