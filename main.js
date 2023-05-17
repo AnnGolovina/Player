@@ -51,8 +51,16 @@ function loadSong(song) {
 }
 
 audio.ontimeupdate = (e) => {
-  const { duration, currentTime } = e.srcElement;
+  const { duration, currentTime } = e.target;
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
-  console.log(duration, "dur", currentTime, "cur");
+};
+
+progressWrapper.onclick = (e) => {
+  const width = progressWrapper.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audio.duration;
+
+  audio.currentTime = (clickX / width) * duration;
+  console.log(clickX);
 };
